@@ -2,17 +2,18 @@ let hamster = {
     stomach: [],
     
     eat: function(food) {
-        Object.defineProperty(this, "stomach", []);
         this.stomach.push(food);
     }
 
 };
     
 let speedy = {
+    stomach: [],
     __proto__: hamster
 };
 
 let lazy = {
+    stomach: [],
     __proto__: hamster
 };
     
